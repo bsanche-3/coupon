@@ -129,13 +129,4 @@ public class CuponController extends ResponseEntityExceptionHandler {
             sqlServices.mergeFavorities(jdbcTemplate,mapItemSorted.getKey(),siteId);
         }
     }
-
-    private void guardarFavoritiesCoupon(List<Map.Entry<String, Double>> listItemsCouponSorted,String siteId) {
-        Conectar conectar = new Conectar();
-        SqlServices sqlServices = new SqlServices();
-        JdbcTemplate jdbcTemplate = conectar.conectar();
-        for (Map.Entry<String, Double> item_sorted: listItemsCouponSorted) {
-            sqlServices.mergeFavorities(jdbcTemplate,item_sorted.getKey(),siteId);
-        }
-    }
 }

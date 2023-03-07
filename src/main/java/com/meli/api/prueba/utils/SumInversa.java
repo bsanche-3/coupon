@@ -37,13 +37,4 @@ public class SumInversa {
         itemsCouponSorted.sort(Map.Entry.comparingByKey(Comparator.reverseOrder()));
         return itemsCouponSorted;
     }
-
-
-    public static void main(String[] args) {
-        Double[] prices = {720.0,600.0,350.0,350.0,480.0,200.0};
-        double target = 1420;
-        List<Map.Entry<Double,ArrayList<Double>>> result;
-        result = sumInversaUp(new ArrayList<>(Arrays.asList(prices)),target);
-        Map.Entry<Double, ArrayList<Double>> dato = result.get(0);
-    }
 }

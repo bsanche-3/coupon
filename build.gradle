@@ -15,7 +15,6 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation group: 'org.json', name: 'json', version: '20090211'
-	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.ws:spring-ws-support:3.0.7.RELEASE'
 	implementation 'org.springframework.ws:spring-ws-core:3.0.7.RELEASE'
 	implementation 'org.springframework.boot:spring-boot-starter-web-services'

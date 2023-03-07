@@ -32,5 +32,4 @@ public class FavoritiesController {
         }
         return ResponseEntity.ok().body(response);
     }
-
 }

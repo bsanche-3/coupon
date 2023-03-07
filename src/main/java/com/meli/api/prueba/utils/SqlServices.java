@@ -10,17 +10,6 @@ public class SqlServices {
     @Autowired
     public SqlServices() { }
 
-    public void probarConexion(JdbcTemplate jdbcTemplate) {
-        String sql = "SELECT @@VERSION";
-        String version;
-        try {
-            version = jdbcTemplate.queryForObject(sql, String.class);
-                System.out.println("Versión de SQL Server: " + version);
-            }catch (Exception e){
-                System.out.println("Falla en la Conexion a la BD ");
-            }
-    }
-
     public String findTopFavorities(JdbcTemplate jdbcTemplate, String[] siteId) {
 
         String sql = "SELECT TOP 5 item_id, conteo FROM favoritos where site_id = ? ORDER BY conteo desc FOR JSON AUTO";
