@@ -11,10 +11,8 @@ public class SqlServices {
     public SqlServices() { }
 
     public String findTopFavorities(JdbcTemplate jdbcTemplate, String[] siteId) {
-
         String sql = "SELECT TOP 5 item_id, conteo FROM favoritos where site_id = ? ORDER BY conteo desc FOR JSON AUTO";
         return jdbcTemplate.queryForObject(sql, siteId, String.class);
-
     }
 
     public void mergeFavorities(JdbcTemplate jdbcTemplate, String itemId, String siteId) {
