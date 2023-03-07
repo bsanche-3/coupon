@@ -19,17 +19,20 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation group: 'org.json', name: 'json', version: '20090211'
-	implementation 'org.springframework.ws:spring-ws-support:3.0.7.RELEASE'
-	implementation 'org.springframework.ws:spring-ws-core:3.0.7.RELEASE'
-	implementation 'org.springframework.boot:spring-boot-starter-web-services'
-	implementation 'org.springframework.ws:spring-ws-support:3.1.4'
-	implementation 'javax.validation:validation-api:2.0.1.Final'
-
-	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
 	implementation 'com.microsoft.sqlserver:mssql-jdbc:9.4.0.jre11'
 	implementation 'com.networknt:exception:2.1.7'
+
+	implementation 'org.springframework.boot:spring-boot-starter-web-services'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
+	implementation 'org.springframework.boot:spring-boot-starter'
+
+	implementation 'org.springframework.ws:spring-ws-support:3.0.7.RELEASE'
+	implementation 'org.springframework.ws:spring-ws-core:3.0.7.RELEASE'
+	implementation 'org.springframework.ws:spring-ws-support:3.1.4'
+
+	implementation 'javax.validation:validation-api:2.0.1.Final'
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
@@ -37,3 +40,4 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
