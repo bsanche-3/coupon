@@ -1,0 +1,287 @@
+{
+	"info": {
+		"_postman_id": "cb9cd269-0b73-4c36-9684-d3e1cb88d0ed",
+		"name": "Mercado",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11239612"
+	},
+	"item": [
+		{
+			"name": "coupon",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"item_ids\": [\"MPE624617921\",\"MPE627571744\",\"MPE627519585\",\"MPE627250880\",\"MPE627781130\"],\r\n\"amount\": 1869\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/coupon",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"coupon"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sites",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/sites",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"sites"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/Products?site=MPE&category=MPE1459",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"Products"
+					],
+					"query": [
+						{
+							"key": "site",
+							"value": "MPE"
+						},
+						{
+							"key": "category",
+							"value": "MPE1459"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/categories?site=MPE",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"categories"
+					],
+					"query": [
+						{
+							"key": "site",
+							"value": "MPE"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "favorities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/favorities?site=MPE",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"favorities"
+					],
+					"query": [
+						{
+							"key": "site",
+							"value": "MPE"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "nube_favorities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://favoritosmeli.uc.r.appspot.com/api/favorities?site=MPE",
+					"protocol": "https",
+					"host": [
+						"favoritosmeli",
+						"uc",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"favorities"
+					],
+					"query": [
+						{
+							"key": "site",
+							"value": "MPE"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "nube_coupon",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"item_ids\": [\"MPE624617921\",\"MPE627571744\",\"MPE627519585\",\"MPE627250880\",\"MPE627781130\"],\r\n\"amount\": 1869\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://favoritosmeli.uc.r.appspot.com/api/coupon",
+					"protocol": "https",
+					"host": [
+						"favoritosmeli",
+						"uc",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"coupon"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "nube_sites",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://favoritosmeli.uc.r.appspot.com/api/sites",
+					"protocol": "https",
+					"host": [
+						"favoritosmeli",
+						"uc",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"sites"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "nube_products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://favoritosmeli.uc.r.appspot.com/api/Products?site=MPE&category=MPE1459",
+					"protocol": "https",
+					"host": [
+						"favoritosmeli",
+						"uc",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"Products"
+					],
+					"query": [
+						{
+							"key": "site",
+							"value": "MPE"
+						},
+						{
+							"key": "category",
+							"value": "MPE1459"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "nube_categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://favoritosmeli.uc.r.appspot.com/api/categories?site=MPE",
+					"protocol": "https",
+					"host": [
+						"favoritosmeli",
+						"uc",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"categories"
+					],
+					"query": [
+						{
+							"key": "site",
+							"value": "MPE"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
